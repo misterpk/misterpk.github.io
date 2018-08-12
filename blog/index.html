@@ -5,7 +5,9 @@ layout: default
 <div class="page blog-index">
   <h1>Bloggie Blog</h1>
   <div class="col-two blog-cols">
-    {% include recent-posts.html &}
+    <div class="col col-aside blog-recent">
+      {% include recent-posts.html %}
+    </div>
     <div class="col col-content blog-previews">
       {% for post in site.posts %}
       <div class="blog-posts">
